@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜜度科技股份有限公司深度分析</title>
+    <script src="https://cdn.tailwindcss.com/3.4.3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        .midu-blue {
+            color: #0052FF; /* 假设蜜度蓝 */
+        }
+        .bg-midu-blue {
+            background-color: #0052FF;
+        }
+        .border-midu-blue {
+            border-color: #0052FF;
+        }
+        .bento-box {
+            background-color: #111827; /* 深灰，接近黑 */
+            border-radius: 0.75rem; /* 12px */
+            padding: 1.5rem; /* 24px */
+            border: 1px solid #374151; /* 灰色边框 */
+            overflow: hidden;
+        }
+        .highlight-text {
+            font-size: 3rem; /* 超大字体 */
+            font-weight: bold;
+            line-height: 1.1;
+        }
+        @media (min-width: 768px) {
+            .highlight-text {
+                font-size: 5rem; /* 更大 */
+            }
+        }
+        .chinese-main {
+            font-size: 1.875rem; /* 30px */
+            font-weight: bold;
+        }
+        .english-sub {
+            font-size: 0.875rem; /* 14px */
+            color: #9CA3AF; /* 灰色 */
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .tech-gradient {
+            background-image: linear-gradient(to bottom right, rgba(0, 82, 255, 0.7), rgba(0, 82, 255, 0.3));
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .table-container th, .table-container td {
+            border: 1px solid #4B5563; /* 更深的灰色边框 */
+            padding: 0.75rem;
+            text-align: left;
+            font-size: 0.875rem;
+        }
+        .table-container th {
+            background-color: #1F2937; /* 深灰背景 */
+        }
+        /* Framer Motion will be used via JS for more control, but simple transitions can be CSS */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="app" class="p-4 md:p-8">
+
+        <motion.section
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            class="min-h-screen flex flex-col justify-center items-center text-center p-6"
+        >
+            <div class="mb-8">
+                <i class="fas fa-microchip midu-blue" style="font-size: 80px;"></i>
+            </div>
+            <h1 class="font-bold text-5xl md:text-7xl lg:text-8xl mb-4">
+                蜜度科技<span class="midu-blue">深度分析</span>
+            </h1>
+            <p class="english-sub text-lg md:text-xl text-gray-300 mb-12">MIDU TECHNOLOGY INC. DEEP DIVE ANALYSIS</p>
+            <p class="text-gray-400 max-w-2xl">
+                一家自2009年以来在中国人工智能领域持续深耕的企业，专注于大模型垂直应用。
+                <span class="english-sub block mt-1">Pioneering Vertical AI Applications Since 2009.</span>
+            </p>
+             <div class="absolute bottom-10 animate-bounce">
+                <i class="fas fa-chevron-down text-2xl midu-blue"></i>
+            </div>
+        </motion.section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <motion.div
+                class="md:col-span-2 lg:col-span-3 bento-box scroll-reveal"
+            >
+                <h2 class="chinese-main mb-2"><i class="fas fa-rocket midu-blue mr-2"></i>执行摘要 <span class="english-sub ml-2">Executive Summary</span></h2>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    蜜度科技股份有限公司（简称“蜜度科技”）是一家自2009年以来在中国人工智能领域持续深耕的企业，专注于大模型垂直应用。公司总部位于上海，凭借其在智能检索、智能校对和智能生成方面的核心能力，为政府、媒体、出版、企业等多个行业提供智能化解决方案。蜜度科技的核心战略是开发和应用针对特定行业需求的垂直大模型，如“蜜巢”和“文修”，以期在细分市场建立竞争优势。
+                    公司的产品组合包括“新浪舆情通”（舆情监测）、“索骥”（多模态信息检索）、“校对通”（AI智能校对）和“模力通”（大模型智能办公工具）。这些产品和服务旨在满足客户在城市治理、智能办公、智能客服和智能营销等场景下的需求。
+                    蜜度科技通过与新浪微博、华为昇腾、火山引擎等关键伙伴的战略合作，获取了重要的数据资源、技术支持和硬件平台，从而增强了其产品能力和市场覆盖。公司获得了多项行业认可和资质，包括国家级“专精特新小巨人”企业、上海市“专精特新”企业和上海市市级企业技术中心等，其自研大模型也已完成备案，符合中国市场的监管要求。
+                    在竞争激烈的市场环境中，蜜度科技面临来自专业领域解决方案提供商和大型科技公司通用AI平台的双重挑战。其成功在很大程度上依赖于其在垂直领域的专业知识、独特的数据资产（尤其是新浪微博数据）以及满足特定客户（尤其是政府和国有企业）需求的能力。公司的发展历程、获得的资质认证以及2023年完成的股份制改造，可能预示着其未来有在中国资本市场寻求进一步发展的可能性。
+                </p>
+                <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-3 bg-gray-800 rounded-lg">
+                        <div class="text-3xl font-bold midu-blue">2009</div>
+                        <div class="text-xs text-gray-400">成立年份</div>
+                    </div>
+                    <div class="p-3 bg-gray-800 rounded-lg">
+                        <div class="text-3xl font-bold midu-blue">AI</div>
+                        <div class="text-xs text-gray-400">垂直大模型</div>
+                    </div>
+                    <div class="p-3 bg-gray-800 rounded-lg">
+                        <div class="text-3xl font-bold midu-blue"><i class="fas fa-handshake"></i></div>
+                        <div class="text-xs text-gray-400">关键战略合作</div>
+                    </div>
+                    <div class="p-3 bg-gray-800 rounded-lg">
+                        <div class="text-3xl font-bold midu-blue"><i class="fas fa-award"></i></div>
+                        <div class="text-xs text-gray-400">专精特新小巨人</div>
+                    </div>
+                </div>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main mb-2"><i class="fas fa-building midu-blue mr-2"></i>公司简介 <span class="english-sub ml-1">Company Profile</span></h3>
+                <p class="text-gray-300 text-sm">
+                    蜜度科技股份有限公司（曾用名：上海蜜度信息技术有限公司）成立于2009年11月27日，总部上海。
+                    定位：“专注于大模型垂直应用的人工智能企业”。
+                    官网: <a href="https://www.midu.com" target="_blank" class="midu-blue hover:underline">midu.com</a>
+                </p>
+                <div class="mt-4 p-4 rounded-lg tech-gradient">
+                    <div class="highlight-text text-white/80">2009</div>
+                    <p class="english-sub text-white/90">FOUNDED & FOCUSED</p>
+                </div>
+            </motion.div>
+
+            <motion.div class="md:col-span-2 bento-box scroll-reveal">
+                <h3 class="chinese-main mb-2"><i class="fas fa-flag-checkered midu-blue mr-2"></i>历史与关键里程碑 <span class="english-sub ml-1">History & Milestones</span></h3>
+                <ul class="text-gray-300 text-sm space-y-1 list-disc list-inside">
+                    <li><strong>2009-2014:</strong> 创立，早期媒体服务，推出“舆情通”。</li>
+                    <li><strong>2015-2019:</strong> 获新浪微博投资，官方数据支持，推“铀媒”，设“微热点研究院”。</li>
+                    <li><strong>2020-2021:</strong> 推“蜜度校对通”、“蜜度安巡通”，获上海“专精特新”认定。</li>
+                    <li><strong>2022:</strong> 举办WAIC高峰论坛，获AI领航企业等称号，与华为昇腾合作发“校对通AI-Box”。</li>
+                    <li><strong>2023:</strong> 股改，发“蜜巢”、“文修”大模型，获多项荣誉，与火山引擎合作。</li>
+                    <li><strong>2024:</strong> 大模型备案，发“V助手”，与华为昇腾深化合作，发蜜巢政务大模型3.0。</li>
+                </ul>
+                 <div class="mt-3 text-xs text-gray-400">国家级“小巨人”企业公示，彰显实力与信誉。</div>
+            </motion.div>
+
+            <motion.div class="lg:col-span-3 bento-box scroll-reveal table-container">
+                <h4 class="chinese-main text-xl mb-2">表1：蜜度科技股份有限公司关键里程碑</h4>
+                <p class="english-sub mb-2">TABLE 1: KEY MILESTONES OF MIDU TECHNOLOGY INC.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>时间段</th>
+                            <th>关键事件</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2009年-2014年</td><td>公司创立；为网络媒体提供技术开发服务；推出智能检索软件“舆情通”，与多家媒体机构合作。</td></tr>
+                        <tr><td>2015年-2019年</td><td>获新浪微博股权投资及官方数据支持；推出智能校对与新媒体管理平台“铀媒”；设立“微热点研究院”。</td></tr>
+                        <tr><td>2020年-2021年</td><td>获上海市“专精特新”企业认定；推出“蜜度校对通”、“蜜度安巡通”。</td></tr>
+                        <tr><td>2022年</td><td>举办WAIC“数据智能与内容认知”高峰论坛；获AI领航企业、信创产业独角兽、上海市市级企业技术中心等称号；与华为昇腾合作发布“校对通AI-Box”。</td></tr>
+                        <tr><td>2023年</td><td>完成股份制改造；发布“蜜巢”大模型、“文修”智能校对大模型；获“最值得关注AIGC公司”称号；入选信通院《数字政府产业图谱》；牵头起草行业标准；校对系统获国家新闻出版署“科技创新成果”；与火山引擎达成合作。</td></tr>
+                        <tr><td>2024年</td><td>“蜜巢”、“文修”大模型完成备案；发布舆情智能体“V助手”；与华为昇腾签署原生开发合作备忘录，发布蜜巢政务大模型3.0。</td></tr>
+                    </tbody>
+                </table>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main mb-2"><i class="fas fa-bullseye midu-blue mr-2"></i>使命与愿景 <span class="english-sub ml-1">Mission & Vision</span></h3>
+                <p class="text-gray-300 text-sm"><strong>使命:</strong> 坚持以实用的AI产品，为客户创造更大价值。</p>
+                <p class="text-gray-300 text-sm mt-1"><strong>愿景:</strong> 科技赋能千行百业。</p>
+                <div class="mt-4 text-center">
+                    <div class="text-4xl font-bold midu-blue">实用AI</div>
+                    <p class="english-sub">PRACTICAL AI VALUE</p>
+                </div>
+            </motion.div>
+
+            <motion.div class="md:col-span-2 bento-box scroll-reveal">
+                <h3 class="chinese-main mb-2"><i class="fas fa-sitemap midu-blue mr-2"></i>公司架构与基本信息 <span class="english-sub ml-1">Structure & Info</span></h3>
+                <p class="text-gray-300 text-sm">
+                    统一社会信用代码: 91310114697270325A<br>
+                    法定代表人: 翟光景, 注册资本: 人民币1000万元整。<br>
+                    类型: 股份有限公司(非上市、自然人投资或控股)。<br>
+                    主要子公司/机构: 上海蜜度蜜巢智能科技有限公司 (蜜巢大模型), 天津蜜度文修智能科技有限公司 (文修大模型), 微热点研究院。
+                </p>
+                 <p class="text-xs text-gray-400 mt-2">经营范围广泛，涵盖技术服务、软件开发、数据处理、舆情信息服务等。</p>
+            </motion.div>
+
+            <motion.div class="lg:col-span-3 bento-box scroll-reveal table-container">
+                <h4 class="chinese-main text-xl mb-2">表2：蜜度科技股份有限公司基本工商信息</h4>
+                 <p class="english-sub mb-2">TABLE 2: BASIC BUSINESS INFORMATION</p>
+                <table>
+                    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+                    <tbody>
+                        <tr><td>公司全称</td><td>蜜度科技股份有限公司</td></tr>
+                        <tr><td>曾用名</td><td>上海蜜度信息技术有限公司</td></tr>
+                        <tr><td>统一社会信用代码</td><td>91310114697270325A</td></tr>
+                        <tr><td>法定代表人</td><td>翟光景</td></tr>
+                        <tr><td>注册资本</td><td>人民币1000万元整</td></tr>
+                        <tr><td>成立日期</td><td>2009年11月27日</td></tr>
+                        <tr><td>公司类型</td><td>股份有限公司(非上市、自然人投资或控股)</td></tr>
+                        <tr><td>总部地址</td><td>中国（上海）自由贸易试验区张衡路198弄10号301AB室</td></tr>
+                        <tr><td>官方网站</td><td>www.midu.com</td></tr>
+                        <tr><td>经营范围（一般项目）</td><td>技术服务、开发、咨询、交流、转让、推广；软件开发、销售；计算机系统服务；信息系统集成；智能控制系统集成；计算机软硬件及辅助设备批发、零售；通信设备销售；社会经济咨询；广告设计、代理、制作、发布；会议展览；文化艺术交流；企业管理咨询；办公服务；工业互联网数据服务；数据处理；舆情信息服务。</td></tr>
+                        <tr><td>经营范围（许可项目）</td><td>电子认证服务；第二类增值电信业务。</td></tr>
+                    </tbody>
+                </table>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal tech-gradient text-white/90">
+                <h2 class="text-2xl font-bold mb-2"><i class="fas fa-chess-knight midu-blue mr-2"></i>核心战略 <span class="text-sm font-normal opacity-80">Core Strategy</span></h2>
+                <p class="highlight-text !text-4xl md:!text-5xl midu-blue drop-shadow-lg">垂直大模型</p>
+                <p class="mt-2 text-sm">专注特定行业应用，如“蜜巢”和“文修”大模型，提供深度优化解决方案。
+                <span class="block text-xs opacity-70 mt-1">FOCUS ON VERTICAL LLM APPLICATIONS</span></p>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main mb-2"><i class="fas fa-cogs midu-blue mr-2"></i>核心能力 <span class="english-sub ml-1">Core Capabilities</span></h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-2 text-center">
+                    <div class="p-3 bg-gray-800 rounded">
+                        <i class="fas fa-search text-3xl midu-blue mb-1"></i>
+                        <p class="font-semibold text-gray-200">智能检索</p>
+                        <p class="text-xs text-gray-400">77算法</p>
+                    </div>
+                    <div class="p-3 bg-gray-800 rounded">
+                        <i class="fas fa-check-double text-3xl midu-blue mb-1"></i>
+                        <p class="font-semibold text-gray-200">智能校对</p>
+                        <p class="text-xs text-gray-400">72算法</p>
+                    </div>
+                    <div class="p-3 bg-gray-800 rounded">
+                        <i class="fas fa-magic text-3xl midu-blue mb-1"></i>
+                        <p class="font-semibold text-gray-200">智能生成</p>
+                        <p class="text-xs text-gray-400">19算法</p>
+                    </div>
+                </div>
+                <p class="mt-3 text-center highlight-text !text-6xl midu-blue">168</p>
+                <p class="text-center text-sm text-gray-300">算法模型支撑</p>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main mb-2"><i class="fas fa-bullseye-pointer midu-blue mr-2"></i>目标市场 <span class="english-sub ml-1">Target Markets</span></h3>
+                <ul class="text-gray-300 text-sm space-y-1">
+                    <li><i class="fas fa-city midu-blue mr-1"></i> 城市治理 (政府、公共事业)</li>
+                    <li><i class="fas fa-briefcase midu-blue mr-1"></i> 智能办公 (政企、媒体、出版)</li>
+                    <li><i class="fas fa-headset midu-blue mr-1"></i> 智能客服</li>
+                    <li><i class="fas fa-chart-line midu-blue mr-1"></i> 智能营销</li>
+                </ul>
+                 <p class="text-xs text-gray-400 mt-2">核心客户：政府机构、国企、媒体、出版业。</p>
+            </motion.div>
+
+            <motion.div class="md:col-span-2 lg:col-span-3 bento-box scroll-reveal">
+                <h2 class="chinese-main mb-3"><i class="fas fa-lightbulb-on midu-blue mr-2"></i>技术与创新 <span class="english-sub ml-2">Technology & Innovation</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-gray-800 rounded-lg">
+                        <h4 class="text-xl font-semibold midu-blue">蜜巢 (Mi Chao) 大模型</h4>
+                        <p class="text-sm text-gray-300 mt-1">聚焦智能知识管理、文稿写作、舆情分析。高质量训练数据 (1万亿+ Token, 75%+ 中文)。应用于知知通、文稿通、模力通、V助手。蜜巢政务大模型3.0 (2024.7)。</p>
+                        <div class="mt-2 text-xs text-gray-400">场景: 应急执法, 市场监管, 政务热线等20+核心场景。</div>
+                    </div>
+                    <div class="p-4 bg-gray-800 rounded-lg">
+                        <h4 class="text-xl font-semibold midu-blue">文修 (Wen Xiu) 智能校对大模型</h4>
+                        <p class="text-sm text-gray-300 mt-1">专注智能校对，满足出版、新闻、政务需求。中文校对效果优于ChatGPT (约20-30%)。训练数据8000亿Token。文修2.0 (2024.3)。</p>
+                        <div class="mt-2 text-xs text-gray-400">场景: 公文/媒体稿件/OA文档校对, 图书审核等。</div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-300 mt-3">两大模型均于2024年初完成备案。</p>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-code-branch midu-blue mr-2"></i>算法与技术实力</h3>
+                <p class="english-sub mb-1">ALGORITHMS & TECHNICAL STRENGTH</p>
+                <p class="text-gray-300 text-sm">168算法模型 (77检索, 72校对, 19生成)。团队专长NLP, CV, 跨模态检索, LLM。CTO刘益东经验丰富。</p>
+                <div class="mt-3 text-center">
+                     <i class="fas fa-brain text-6xl midu-blue tech-gradient p-3 rounded-full"></i>
+                     <p class="text-xs text-gray-400 mt-1">多模态处理能力</p>
+                </div>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-database midu-blue mr-2"></i>数据基础设施</h3>
+                <p class="english-sub mb-1">DATA INFRASTRUCTURE</p>
+                <p class="text-gray-300 text-sm">
+                    <span class="font-bold midu-blue text-3xl">10PB+</span> 存量数据。<br>
+                    每日新增: 文本9.5亿, 图片6.7亿, 音视频2.6亿。<br>
+                    关键数据源: 新浪微博官方数据, 短视频平台授权。
+                </p>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-star midu-blue mr-2"></i>关键创新成果</h3>
+                <p class="english-sub mb-1">KEY INNOVATIONS</p>
+                <ul class="text-gray-300 text-sm list-disc list-inside space-y-1">
+                    <li>V助手 (舆情智能体)</li>
+                    <li>大模型国家备案</li>
+                    <li>牵头行业标准制定</li>
+                    <li>校对通AI-Box (与华为昇腾)</li>
+                    <li>模力通“三模融合”</li>
+                </ul>
+            </motion.div>
+
+            <motion.div class="md:col-span-2 lg:col-span-3 bento-box scroll-reveal">
+                 <h3 class="chinese-main text-lg mb-2"><i class="fas fa-user-tie midu-blue mr-2"></i>CTO对AI发展的见解 (刘益东)</h3>
+                 <p class="english-sub mb-1">CTO'S INSIGHTS ON AI DEVELOPMENT</p>
+                 <ul class="text-gray-300 text-sm list-disc list-inside space-y-1">
+                    <li>下一代智能体的自主进化：模态内容、模型调用能力关键。</li>
+                    <li>强调应用场景和商业价值：2024年是行业场景落地元年。</li>
+                    <li>务实的模型训练与资源利用：持续训练是更优选择。</li>
+                    <li>积极吸纳外部创新：如DeepSeek促进市场教育和需求。</li>
+                 </ul>
+            </motion.div>
+
+            <motion.div class="md:col-span-3 bento-box scroll-reveal">
+                <h2 class="chinese-main mb-3"><i class="fas fa-cubes midu-blue mr-2"></i>产品与服务组合 <span class="english-sub ml-2">Products & Services</span></h2>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="text-xl font-bold midu-blue">新浪舆情通</h3>
+                <p class="english-sub mb-1">SINA PUBLIC OPINION MONITORING</p>
+                <p class="text-sm text-gray-300">政企舆情大数据服务平台。全网监测，36个月数据回溯，智能分析，极速预警。新浪微博官方数据支持。V助手集成。</p>
+                <div class="mt-2 text-center">
+                    <span class="text-4xl font-bold text-white">40k+</span>
+                    <p class="text-xs text-gray-400">服务客户</p>
+                </div>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="text-xl font-bold midu-blue">索骥 (SuoJi)</h3>
+                <p class="english-sub mb-1">MULTI-MODAL INFORMATION RETRIEVAL</p>
+                <p class="text-sm text-gray-300">多模态与跨模态信息检索平台。智能视频监测与风险感知，专项风险场景识别，跨模态检索，多语言支持。短视频平台数据授权。</p>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="text-xl font-bold midu-blue">校对通 (XiaoDuiTong)</h3>
+                <p class="english-sub mb-1">AI SMART PROOFREADING PLATFORM</p>
+                <p class="text-sm text-gray-300">AI智能校对平台。文修大模型驱动。多模态内容校对 (35类)，公文审核，广告法校对，多语言，AI润色。90秒校20万字。</p>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="text-xl font-bold midu-blue">模力通 (MoLiTong)</h3>
+                <p class="english-sub mb-1">LLM SMART OFFICE TOOL</p>
+                <p class="text-sm text-gray-300">大模型智能办公工具。集成校对、翻译、写作、问答等8大功能。“三模融合” (DeepSeek, 蜜巢, 文修)。SaaS与一体机可选，支持内网部署。</p>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal md:col-span-2">
+                <h3 class="text-xl font-bold midu-blue">其他服务</h3>
+                <p class="english-sub mb-1">OTHER SERVICES</p>
+                <ul class="text-sm text-gray-300 list-disc list-inside space-y-1">
+                    <li>报告服务 (专业舆情分析、行业研究)</li>
+                    <li>智能推送 (预警信息精准推送)</li>
+                    <li>培训课程 (提升技能，人才培养)</li>
+                    <li>全天候专业服务 (7x24小时支持)</li>
+                </ul>
+            </motion.div>
+
+            <motion.div class="lg:col-span-3 bento-box scroll-reveal table-container">
+                <h4 class="chinese-main text-xl mb-2">表3：蜜度科技主要产品组合摘要</h4>
+                <p class="english-sub mb-2">TABLE 3: MAIN PRODUCT PORTFOLIO SUMMARY</p>
+                <table>
+                    <thead><tr><th>产品名称</th><th>核心功能</th><th>主要特点</th><th>目标领域</th><th>关键技术支撑</th></tr></thead>
+                    <tbody>
+                        <tr><td>新浪舆情通</td><td>政企舆情大数据监测、分析、预警</td><td>新浪微博官方数据支持，36个月数据回溯，7大类分析，V助手智能交互</td><td>政府、企业、媒体、公关等</td><td>智能检索算法，蜜巢大模型，DeepSeek R1</td></tr>
+                        <tr><td>索骥</td><td>多模态与跨模态信息检索，智能视频监测</td><td>视频内容精准识别与溯源，专项风险场景识别，短视频平台数据授权</td><td>政府、企业、教育、医疗等（风险感知、内容监控）</td><td>跨模态检索算法，AI视频分析</td></tr>
+                        <tr><td>校对通</td><td>AI智能校对（文本、图片、音视频）</td><td>35类校对类型，公文审核，广告法校对，多语言支持，AI润色</td><td>政府、媒体、出版、企业、学校</td><td>文修智能校对大模型，多模态内容处理算法</td></tr>
+                        <tr><td>模力通</td><td>大模型智能办公工具</td><td>集成校对、翻译、写作、问答等八大功能，三模融合，SaaS与一体机可选，内网部署</td><td>政府、企业（智慧办公）</td><td>蜜巢大模型，文修大模型，DeepSeek</td></tr>
+                    </tbody>
+                </table>
+            </motion.div>
+
+            <motion.div class="md:col-span-3 bento-box scroll-reveal">
+                <h2 class="chinese-main mb-3"><i class="fas fa-users-cog midu-blue mr-2"></i>市场生态与合作伙伴 <span class="english-sub ml-2">Market Ecosystem & Partners</span></h2>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-users midu-blue mr-2"></i>客户基础与行业应用</h3>
+                <p class="english-sub mb-1">CLIENT BASE & APPLICATIONS</p>
+                <div class="highlight-text !text-6xl midu-blue text-center my-3">45K+</div>
+                <p class="text-center text-gray-300 text-sm">服务客户</p>
+                <p class="text-gray-300 text-sm mt-2">侧重政府、国企、媒体出版。案例: 上海应急局, 广州林业园林局, 中国民族报社, 中科院CNIC, 商业银行等。</p>
+            </motion.div>
+
+            <motion.div class="md:col-span-2 bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-handshake-angle midu-blue mr-2"></i>战略合作伙伴</h3>
+                 <p class="english-sub mb-1">STRATEGIC PARTNERS</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-2 text-center">
+                    <div class="p-2 bg-gray-800 rounded"><i class="fab fa-weibo text-2xl midu-blue my-1"></i><p class="text-xs text-gray-400">新浪微博</p></div>
+                    <div class="p-2 bg-gray-800 rounded"><i class="fas fa-server text-2xl midu-blue my-1"></i><p class="text-xs text-gray-400">华为昇腾</p></div>
+                    <div class="p-2 bg-gray-800 rounded"><i class="fas fa-fire text-2xl midu-blue my-1"></i><p class="text-xs text-gray-400">火山引擎</p></div>
+                    <div class="p-2 bg-gray-800 rounded"><i class="fas fa-brain text-2xl midu-blue my-1"></i><p class="text-xs text-gray-400">DeepSeek</p></div>
+                </div>
+                <p class="text-gray-300 text-sm mt-3">还包括出版与媒体行业机构、学术院校等。</p>
+            </motion.div>
+
+            <motion.div class="lg:col-span-3 bento-box scroll-reveal table-container">
+                <h4 class="chinese-main text-xl mb-2">表4：蜜度科技主要战略合作伙伴及合作领域</h4>
+                <p class="english-sub mb-2">TABLE 4: KEY STRATEGIC PARTNERS & COLLABORATION AREAS</p>
+                <table>
+                    <thead><tr><th>合作伙伴</th><th>合作性质与领域</th><th>关联产品/技术</th></tr></thead>
+                    <tbody>
+                        <tr><td>新浪微博</td><td>股权投资，官方数据支持</td><td>新浪舆情通</td></tr>
+                        <tr><td>华为昇腾</td><td>AI硬件平台，原生AI大模型应用开发合作</td><td>校对通AI-Box，蜜巢政务大模型</td></tr>
+                        <tr><td>火山引擎</td><td>智能检索应用合作</td><td>智能检索相关产品</td></tr>
+                        <tr><td>DeepSeek</td><td>AI大模型技术集成</td><td>模力通，V助手</td></tr>
+                        <tr><td>出版/媒体/学术机构</td><td>行业应用探索，标准制定，人才培养，技术验证</td><td>校对通（出版版），文修大模型</td></tr>
+                    </tbody>
+                </table>
+            </motion.div>
+
+            <motion.div class="md:col-span-3 bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-award midu-blue mr-2"></i>行业认可、奖项与资质</h3>
+                <p class="english-sub mb-1">RECOGNITION, AWARDS & CERTIFICATIONS</p>
+                <ul class="text-gray-300 text-sm columns-1 md:columns-2 list-disc list-inside space-y-1">
+                    <li>国家级“专精特新小巨人”企业</li>
+                    <li>上海市“专精特新”企业</li>
+                    <li>上海市市级企业技术中心</li>
+                    <li>国家高新技术企业</li>
+                    <li>AI领航企业, 信创产业独角兽</li>
+                    <li>大模型完成国家备案</li>
+                    <li>入选信通院《数字政府产业图谱》</li>
+                    <li>牵头《数字内容自动校对系统功能要求》行业标准</li>
+                    <li>“蜜度校对系统”入选国家新闻出版署“科技创新成果”</li>
+                    <li>“模力通”获“最佳办公大模型一体机”奖</li>
+                    <li>60+发明专利, 90+软件著作权</li>
+                </ul>
+            </motion.div>
+
+            <motion.div class="md:col-span-3 bento-box scroll-reveal">
+                <h2 class="chinese-main mb-3"><i class="fas fa-chart-pie midu-blue mr-2"></i>竞争格局分析 <span class="english-sub ml-2">Competitive Landscape</span></h2>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-crosshairs midu-blue mr-2"></i>市场定位与竞争策略</h3>
+                 <p class="english-sub mb-1">POSITIONING & STRATEGY</p>
+                <ul class="text-gray-300 text-sm list-disc list-inside space-y-1">
+                    <li>垂直模型优势 (蜜巢, 文修)</li>
+                    <li>数据资产壁垒 (新浪微博数据, 10PB+数据)</li>
+                    <li>软硬一体与灵活部署 (AI-Box, 一体机)</li>
+                    <li>行业深耕与合规 (备案, 标准制定)</li>
+                    <li>生态合作 (华为, 火山引擎等)</li>
+                </ul>
+            </motion.div>
+
+            <motion.div class="md:col-span-2 lg:col-span-3 bento-box scroll-reveal table-container">
+                 <h3 class="chinese-main text-lg mb-2"><i class="fas fa-users-slash midu-blue mr-2"></i>主要细分市场竞争对手分析</h3>
+                 <p class="english-sub mb-2">COMPETITOR ANALYSIS IN KEY SEGMENTS</p>
+                <p class="text-sm text-gray-300 mb-2">
+                    <strong>舆情监测:</strong> Meltwater, 中新海针, 人民网舆情等。蜜度优势: 新浪微博数据, V助手。 <br>
+                    <strong>AI智能校对:</strong> 金山黑马校对, 方正校对等。蜜度优势: 文修大模型性能, 多模态, 行业标准。 <br>
+                    <strong>AI智能办公:</strong> WPS AI, Microsoft Copilot, 钉钉AI, 飞书, 百度文心等。蜜度优势: 垂直模型融合, 政企专注, 私有化部署。 <br>
+                    <strong>企业知识管理:</strong> 爱数AnyShare, 蓝凌aiKM, 百度如流等。蜜度优势: 垂直模型驱动, 私有化。
+                </p>
+                <h4 class="chinese-main text-xl mt-4 mb-2">表5：蜜度科技主要产品线竞争格局简析</h4>
+                <p class="english-sub mb-2">TABLE 5: COMPETITIVE LANDSCAPE OF MAIN PRODUCT LINES</p>
+                <table>
+                    <thead><tr><th>产品线</th><th>主要功能</th><th>蜜度产品</th><th>主要竞争对手举例</th><th>蜜度竞争优势点（推测）</th></tr></thead>
+                    <tbody>
+                        <tr><td>舆情监测</td><td>全网信息监测、分析、预警</td><td>新浪舆情通</td><td>Meltwater, 中新海针, 人民网舆情, 智慧星光</td><td>新浪微博官方数据，V助手智能交互，本土化理解</td></tr>
+                        <tr><td>AI智能校对</td><td>文本、多模态内容校对、润色</td><td>校对通 (文修大模型)</td><td>金山黑马校对, 方正校对, 果麦AI校对</td><td>垂直领域文修大模型性能，多模态处理，行业标准参与</td></tr>
+                        <tr><td>AI智能办公</td><td>写作、问答、分析、翻译、校对等</td><td>模力通 (三模融合)</td><td>WPS AI, Microsoft Copilot, 钉钉AI, 飞书智能伙伴, 百度文心, 阿里通义等</td><td>垂直模型融合，政企场景专注，私有化部署与数据安全</td></tr>
+                        <tr><td>企业知识管理</td><td>知识库构建、智能问答、知识检索</td><td>蜜巢大模型 (知知通, 模力通)</td><td>爱数AnyShare, 沃丰Udesk, 鸿翼KM, 蓝凌aiKM, 百度如流</td><td>垂直模型驱动，与办公场景结合，私有化部署</td></tr>
+                    </tbody>
+                </table>
+            </motion.div>
+
+            <motion.div class="md:col-span-3 bento-box scroll-reveal">
+                 <h2 class="chinese-main mb-3"><i class="fas fa-users-crown midu-blue mr-2"></i>管理团队 <span class="english-sub ml-2">Management Team</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-gray-300">
+                    <div><strong>翟光景 (CEO):</strong> 法定代表人, 战略决策, 对外合作。</div>
+                    <div><strong>刘益东 (CTO):</strong> 兼蜜巢智能总裁, 蜜度研究院执行院长。哈工大背景, 20年互联网, 12年大数据, 7年AI经验。上海市首席技师。</div>
+                    <div><strong>张颂华 (董事长):</strong> 参与重要合作签约。</div>
+                    <div><strong>张晓娟:</strong> 研发副总裁, 蜜度文修总裁。</div>
+                    <div><strong>高威:</strong> 首席分析师, 微热点研究院副院长。</div>
+                    <div><strong>黄志华:</strong> 上海市首席技师。</div>
+                </div>
+            </motion.div>
+
+            <motion.div class="md:col-span-3 bento-box scroll-reveal">
+                 <h2 class="chinese-main mb-3"><i class="fas fa-binoculars midu-blue mr-2"></i>结论与展望 <span class="english-sub ml-2">Conclusion & Outlook</span></h2>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-thumbs-up midu-blue mr-2"></i>主要优势</h3>
+                <p class="english-sub mb-1">KEY STRENGTHS</p>
+                <ul class="text-gray-300 text-sm list-disc list-inside space-y-1">
+                    <li>清晰垂直化战略</li>
+                    <li>核心自研模型 (蜜巢, 文修)</li>
+                    <li>关键数据资产 (新浪微博)</li>
+                    <li>稳固政企客户基础</li>
+                    <li>战略生态合作</li>
+                    <li>资质与认可</li>
+                    <li>灵活产品形态 (SaaS, 一体机)</li>
+                </ul>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-exclamation-triangle midu-blue mr-2"></i>潜在挑战</h3>
+                <p class="english-sub mb-1">POTENTIAL CHALLENGES</p>
+                <ul class="text-gray-300 text-sm list-disc list-inside space-y-1">
+                    <li>激烈的市场竞争</li>
+                    <li>对关键伙伴依赖 (新浪微博)</li>
+                    <li>技术迭代与投入压力</li>
+                    <li>商业化规模扩展</li>
+                    <li>市场教育与接受度</li>
+                </ul>
+            </motion.div>
+            
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-chart-growth midu-blue mr-2"></i>市场机遇</h3>
+                <p class="english-sub mb-1">MARKET OPPORTUNITIES</p>
+                <ul class="text-gray-300 text-sm list-disc list-inside space-y-1">
+                    <li>数字中国与信创产业发展</li>
+                    <li>垂直行业智能化转型需求</li>
+                    <li>AIGC技术浪潮</li>
+                    <li>数据安全与私有化部署需求</li>
+                </ul>
+            </motion.div>
+
+            <motion.div class="bento-box scroll-reveal">
+                <h3 class="chinese-main text-lg mb-2"><i class="fas fa-shield-virus midu-blue mr-2"></i>潜在风险</h3>
+                <p class="english-sub mb-1">POTENTIAL RISKS</p>
+                <ul class="text-gray-300 text-sm list-disc list-inside space-y-1">
+                    <li>技术快速替代风险</li>
+                    <li>数据合规与伦理风险</li>
+                    <li>市场竞争加剧，利润压缩</li>
+                    <li>人才竞争激烈</li>
+                </ul>
+            </motion.div>
+
+            <motion.div class="md:col-span-2 bento-box scroll-reveal tech-gradient text-white/90">
+                <h3 class="text-2xl font-bold mb-2"><i class="fas fa-compass midu-blue mr-2"></i>未来方向与增长前景</h3>
+                <p class="text-sm font-normal opacity-80 mb-1">FUTURE DIRECTIONS & GROWTH PROSPECTS</p>
+                <ul class="text-sm list-disc list-inside space-y-1">
+                    <li>模型能力持续优化</li>
+                    <li>拓展更多垂直应用场景 (金融, 法律, 医疗)</li>
+                    <li>深化生态合作 (华为昇腾, 火山引擎)</li>
+                    <li>强化软硬件一体化解决方案</li>
+                    <li>关注AIGC与智能体技术</li>
+                    <li>潜在的资本市场运作 (股改完成)</li>
+                </ul>
+                 <p class="text-xs opacity-70 mt-3">专注垂直AI应用，适应中国市场特性，具备增长潜力。数据安全、国产化适配、行业深度理解是关键驱动。</p>
+            </motion.div>
+
+        </div> <motion.footer
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            class="text-center mt-12 py-8 border-t border-gray-700"
+        >
+            <p class="text-gray-400 text-sm">&copy; <span id="currentYear"></span> Midu Technology Inc. Analysis. All information based on provided document.</p>
+            <p class="text-xs text-gray-500 mt-1">Designed with Bento Grid Style & Framer Motion</p>
+        </motion.footer>
+
+    </div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Framer Motion integration for scroll-reveal elements
+        // This is a basic implementation. For more complex animations,
+        // you'd use the `motion` component directly in JS/React/Vue or more specific Framer Motion hooks.
+        const motion = window.motion; // Access Framer Motion from global scope
+
+        const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Optional: unobserve after first intersection
+                    // observer.unobserve(entry.target); 
+                } else {
+                    // Optional: remove visible class to re-animate on scroll up
+                    // entry.target.classList.remove('visible');
+                }
+            });
+        }, {
+            rootMargin: '0px',
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        scrollRevealElements.forEach(el => {
+            observer.observe(el);
+            // Apply Framer Motion dynamic properties if needed, though CSS handles simple cases well.
+            // Example:
+            // motion.div(el, {
+            //   initial: { opacity: 0, y: 50 },
+            //   whileInView: { opacity: 1, y: 0 },
+            //   viewport: { once: true, amount: 0.1 },
+            //   transition: { duration: 0.6, ease: "easeOut" }
+            // });
+            // Note: Direct DOM manipulation with Framer Motion's core `motion()` function like this
+            // is less common than using it within a component framework (React, Vue).
+            // For this pure HTML setup, combining CSS transitions with JS IntersectionObserver
+            // for the 'trigger' is often more straightforward for simple reveals.
+            // The initial Framer Motion section uses its declarative nature.
+        });
+
+        // For more advanced Framer Motion effects on scroll, you'd typically use React/Vue components
+        // or delve deeper into Framer Motion's scroll-triggered animation hooks if not using a framework.
+        // The provided structure uses CSS for basic scroll reveal for simplicity in a single HTML file.
+        // The very first section animation is a good example of inline Framer Motion usage.
+        // To make all .scroll-reveal elements animate with Framer Motion programmatically:
+        /*
+        scrollRevealElements.forEach(el => {
+            motion.motionValue(el, { // This is not the correct API for direct DOM elements
+                 initial: { opacity: 0, y: 20 },
+                 whileInView: { opacity: 1, y: 0 },
+                 viewport: { once: true, amount: 0.1 },
+                 transition: { duration: 0.5 }
+            });
+        });
+        */
+        // The script above for scroll-reveal with IntersectionObserver is a more standard pure JS approach for this context.
+        // Framer Motion's strength shines in component-based architectures or more complex chained/staggered animations.
+
+    </script>
+</body>
+</html>
